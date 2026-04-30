@@ -20,7 +20,7 @@ st.sidebar.header("Configuration")
 
 DEFAULT_TICKERS = ['SNOW', 'DDOG', 'CRM', 'CRWD', 'PANW', 'MDB', 'ZS', 'NET', 'HUBS', 'TEAM', 'WDAY', 'MNDY']
 
-selected = st.sidebar.multiselect("Default universe", options=DEFAULT_TICKERS, default=DEFAULT_TICKERS)
+selected = st.sidebar.multiselect("Default universe", options=DEFAULT_TICKERS, default=['CRM'])
 
 custom_input = st.sidebar.text_input("Add custom tickers (comma-separated)", placeholder="e.g. BILL, GTLB, SMAR")
 if custom_input:
